@@ -1,0 +1,288 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for header */
+.header {
+    background-color: #2D9596;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header form {
+    display: inline-block;
+}
+
+.header input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.header button[type="submit"] {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.header button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style for navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar button {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style for buttons */
+.navbar button i {
+    margin-right: 5px;
+}
+
+/* Style for footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for header logo */
+.header img {
+    width: 50px; /* Lebar gambar logo */
+    height: auto; /* Tinggi gambar menyesuaikan proporsi */
+    border-radius: 50%; /* Membuat sudut bulat pada gambar */
+    border: 2px solid #fff; /* Memberi border putih pada gambar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+    transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+/* Hover effect for header logo */
+.header img:hover {
+    transform: rotate(360deg); /* Memutar gambar 360 derajat saat dihover */
+}
+
+/*------------------------------------------------------------*/
+
+
+/* CSS code for image gallery */
+
+
+.imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    text-align: center;
+    max-width: 200px;
+}
+
+/* CSS code for form modification */
+.form {
+    padding: 20px;
+}
+
+/* CSS code for table modification */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/*------------------------------------------------*/
+
+/* Bagian SKU */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Gaya untuk baris ganjil */
+table tr:nth-child(odd) {
+    background-color: #FFF7F1;
+}
+
+/* Gaya saat kursor diarahkan ke baris */
+table tr:hover {
+    background-color: #FFE4C9;
+}
+
+/* Gaya untuk kolom harga */
+table td:last-child {
+    text-align: left;
+}
+
+/* Gaya untuk sel header */
+table th {
+    background-color: #2D9596;
+    color: white;
+}
+
+/*-------------------------------------*/
+
+/* CSS for Registration Form */
+#registrationForm {
+    max-width: 400px; /* Lebar maksimum formulir */
+    margin: 20px auto; /* Posisi formulir di tengah */
+    padding: 20px; /* Ruang di dalam formulir */
+    background-color: #f9f9f9; /* Warna latar belakang formulir */
+    border-radius: 8px; /* Sudut formulir melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek angkat */
+}
+
+/* Style for form labels */
+#registrationForm label {
+    display: block; /* Tampilkan label dalam satu baris */
+    margin-bottom: 5px; /* Jarak antara label dan input */
+    color: #333; /* Warna teks label */
+    font-weight: bold; /* Teks label menjadi lebih tebal */
+}
+
+/* Style for form inputs */
+#registrationForm input[type="text"],
+#registrationForm input[type="number"],
+#registrationForm input[type="email"],
+#registrationForm textarea {
+    width: 100%; /* Lebar input */
+    padding: 10px; /* Ruang di dalam input */
+    margin-bottom: 15px; /* Jarak antara input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 5px; /* Sudut input melengkung */
+    transition: border-color 0.3s; /* Transisi saat hover */
+}
+
+/* Style for focused input */
+#registrationForm input:focus,
+#registrationForm textarea:focus {
+    border-color: #555; /* Warna border saat fokus */
+}
+
+/* Style for submit button */
+#registrationForm button[type="submit"] {
+    width: 100%; /* Lebar tombol */
+    padding: 10px; /* Ruang di dalam tombol */
+    background-color: #333; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus border tombol */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    cursor: pointer; /* Kursor menjadi pointer saat dihover */
+    transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+/* Style for hover effect on submit button */
+#registrationForm button[type="submit"]:hover {
+    background-color: #555; /* Warna latar belakang tombol saat dihover */
+}
+
+
+/* CSS for Login Form */
+#loginForm {
+    max-width: 400px; /* Lebar maksimum formulir */
+    margin: 20px auto; /* Posisi formulir di tengah */
+    padding: 20px; /* Ruang di dalam formulir */
+    background-color: #f9f9f9; /* Warna latar belakang formulir */
+    border-radius: 8px; /* Sudut formulir melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek angkat */
+}
+
+/* Style for form labels */
+#loginForm label {
+    display: block; /* Tampilkan label dalam satu baris */
+    margin-bottom: 5px; /* Jarak antara label dan input */
+    color: #333; /* Warna teks label */
+    font-weight: bold; /* Teks label menjadi lebih tebal */
+}
+
+/* Style for form inputs */
+#loginForm input[type="email"],
+#loginForm input[type="password"] {
+    width: 100%; /* Lebar input */
+    padding: 10px; /* Ruang di dalam input */
+    margin-bottom: 15px; /* Jarak antara input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 5px; /* Sudut input melengkung */
+    transition: border-color 0.3s; /* Transisi saat hover */
+}
+
+/* Style for focused input */
+#loginForm input:focus {
+    border-color: #555; /* Warna border saat fokus */
+}
+
+/* Style for submit button */
+#loginForm button[type="submit"] {
+    width: 100%; /* Lebar tombol */
+    padding: 10px; /* Ruang di dalam tombol */
+    background-color: #333; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus border tombol */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    cursor: pointer; /* Kursor menjadi pointer saat dihover */
+    transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+/* Style for hover effect on submit button */
+#loginForm button[type="submit"]:hover {
+    background-color: #555; /* Warna latar belakang tombol saat dihover */
+}
