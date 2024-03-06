@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shop</title>
+    <link rel="stylesheet" type="text/css" href="belajar.css">
+    <!-- Font Awesome -->
+    <link href="path/css/all.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img src="https://images-platform.99static.com/n9S7iOvT0hCDS0aZi2Wxz1v8fVI=/201x201:1812x1812/500x500/top/smart/99designs-contests-attachments/99/99416/attachment_99416788" alt="Logo">
+    <h1>Online Shop</h1>
+    <!-- Search Box -->
+    <form action="/search" method="get">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+    <!-- Buttons -->
+    <button><i class="fas fa-user"></i> Registrasi</button>
+    <button><i class="fas fa-sign-in-alt"></i> Login</button>
+    <button><i class="fas fa-shopping-cart"></i> Cart</button>
+</div>
+
+
+<!-- Content -->
+
+<div class="row">
+    <div class="side">
+            <!-- Form -->
+            <h2>Customer Registration Form</h2>
+            <form action="/register" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <!-- Form Login -->
+            <h2>Login Form</h2>
+            <form action="/login" method="post">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+            <div class="middle">
+                 <!-- Video -->
+        <h2>Featured Video</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/qQWvxSAu_lw" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+   <!-- GALLERY -->
+   <div class="imageGallery">
+    <div class="column product">
+        <img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2024/3/4/325b9ae0-b37e-436d-b1c2-68c7d2f17e92.jpg" alt="Image 1">
+        <p class="productname">Wuque Jade Linear Switch</p>
+        <p class="sku">SKU123</p>
+        <p class="price">Rp 6.950/Switch</p>
+        <input type="number" class="quantity" placeholder="Quantity">
+        <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+    </div>
+
+        <div class="column product">
+            <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/3/4/7c73274e-2e1f-4e4f-a4ae-d214627f06d0.jpg" alt="Image 1">
+            <p class="productname">Game 1989 MX Stem 80Retros Switch</p>
+            <p class="sku">SKU123</p>
+            <p class="price">Rp 3.950/Switch</p>
+            <input type="number" class="quantity" placeholder="Quantity">
+            <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+        </div>
+
+        <div class="column product">
+            <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/25/e9d61da0-0597-48d5-8132-01a05fa7046a.jpg"" alt="Image 1">
+            <p class="productname">Akko V3 Silver Pro Switch</p>
+            <p class="sku">SKU123</p>
+            <p class="price">Rp 4.500/Switch</p>
+            <input type="number" class="quantity" placeholder="Quantity">
+            <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+        </div>
+
+        <div class="column product">
+            <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/9/22/94e8347a-ac1b-43cb-86cc-07dc89eb3f2d.jpg" alt="Image 1">
+            <p class="productname">KTT MACARON SERIES PURPLE MECHANICAL SWITCHES</p>
+            <p class="sku">SKU123</p>
+            <p class="price">Rp 3.500/Switch</p>
+            <input type="number" class="quantity" placeholder="Quantity">
+            <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+        </div>
+
+        <div class="column product">
+            <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/10/3425ec7d-8a24-438e-bb6f-93ccbac0b3a8.jpg" alt="Image 1">
+            <p class="productname">VortexSeries Outemu Jade White (Linear 3-Pins Switch)</p>
+            <p class="sku">SKU123</p>
+            <p class="price">Rp 2.900/Switch</p>
+            <input type="number" class="quantity" placeholder="Quantity">
+            <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+        </div>
+       
+ <!-- TABLE -->
+ <table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>SKU</th>
+            <th>Kuantitas</th>
+            <th>Harga</th>
+        </tr>
+    </thead>
+    <tbody id="carttable">
+        <tr>
+            <td>1</td>
+            <td>Wuque Jade Linear Switch</td>
+            <td>SKU123</td>
+            <td>350</td>
+            <td>Rp 6.950/Switch</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Game 1989 MX Stem 80Retros Switch</td>
+            <td>SKU123</td>
+            <td>250</td>
+            <td>Rp 3.950/Switch</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Akko V3 Silver Pro Switch</td>
+            <td>SKU123</td>
+            <td>750</td>
+            <td>Rp 4.500/Switch</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>KTT MACARON SERIES PURPLE MECHANICAL SWITCHES</td>
+            <td>SKU123</td>
+            <td>550</td>
+            <td>Rp 3.500/Switch</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>VortexSeries Outemu Jade White (Linear 3-Pins Switch)</td>
+            <td>SKU123</td>
+            <td>350</td>
+            <td>Rp 2.900/Switch</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+       <!-- FOOTER -->    
+       <footer>
+        &copy; 2024 Switch Store
+    </footer>
+
+</body>
+</html>
