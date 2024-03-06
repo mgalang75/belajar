@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shop</title>
+    <link rel="stylesheet" type="text/css" href="patamon1.css">
+    <!-- Font Awesome -->
+    <link href="path/css/all.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img src="https://images-platform.99static.com/n9S7iOvT0hCDS0aZi2Wxz1v8fVI=/201x201:1812x1812/500x500/top/smart/99designs-contests-attachments/99/99416/attachment_99416788" alt="Logo">
+    <h1>Online Shop</h1>
+    <!-- Search Box -->
+    <form action="/search" method="get">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+    <!-- Buttons -->
+    <button><i class="fas fa-user"></i> Registrasi</button>
+    <button><i class="fas fa-sign-in-alt"></i> Login</button>
+    <button><i class="fas fa-shopping-cart"></i> Cart</button>
+</div>
+
+
+<!-- Content -->
+
+ <section class="video-section">
+        <!-- Video component -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/qQWvxSAu_lw" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- background image color-->
+    <section class="background-section">
+        <div class="background-image"></div>
+    </section>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+      .image-gallery {
+        text-align: center;
+        padding: 20px;
+      }
+    
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        justify-items: center;
+      }
+    
+      .gallery h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+    
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+    </head>
+        <h2 style="margin:20px;">Galeri Produk </h2> 
+    <section class="image-gallery">
+        
+      <div class="gallery">
+        
+        <div class="column product">
+            <img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2024/3/4/325b9ae0-b37e-436d-b1c2-68c7d2f17e92.jpg" alt="Image 1">
+            <p class="productname">Wuque Jade Linear Switch</p>
+            <p class="sku">SKU123</p>
+            <p class="price">Rp 6.950/Switch</p>
+            <input type="number" class="quantity" placeholder="Quantity">
+            <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+        </div>
+
+            <div class="column product">
+                <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/3/4/7c73274e-2e1f-4e4f-a4ae-d214627f06d0.jpg" alt="Image 1">
+                <p class="productname">Game 1989 MX Stem 80Retros Switch</p>
+                <p class="sku">SKU123</p>
+                <p class="price">Rp 3.950/Switch</p>
+                <input type="number" class="quantity" placeholder="Quantity">
+                <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+            </div>
+
+            <div class="column product">
+                <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/25/e9d61da0-0597-48d5-8132-01a05fa7046a.jpg" alt="Image 1">
+                <p class="productname">Akko V3 Silver Pro Switch</p>
+                <p class="sku">SKU123</p>
+                <p class="price">Rp 4.500/Switch</p>
+                <input type="number" class="quantity" placeholder="Quantity">
+                <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+            </div>
+
+            <div class="column product">
+                <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/9/22/94e8347a-ac1b-43cb-86cc-07dc89eb3f2d.jpg" alt="Image 1">
+                <p class="productname">KTT MACARON SERIES PURPLE MECHANICAL SWITCHES</p>
+                <p class="sku">SKU123</p>
+                <p class="price">Rp 3.500/Switch</p>
+                <input type="number" class="quantity" placeholder="Quantity">
+                <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+            </div>
+
+            <div class="column product">
+                <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/10/3425ec7d-8a24-438e-bb6f-93ccbac0b3a8.jpg" alt="Image 1">
+                <p class="productname">VortexSeries Outemu Jade White (Linear 3-Pins Switch)</p>
+                <p class="sku">SKU123</p>
+                <p class="price">Rp 2.900/Switch</p>
+                <input type="number" class="quantity" placeholder="Quantity">
+                <button class="button button1 addtocart"><i class="fas fa-cart-plus"></i> Beli</button>
+            </div>
+            
+      </div>
+      </section>
+    </section>
+ 
+    
+    <section class="product-table">
+        <!-- Table component -->
+        <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+            </head>
+            <body>
+            
+        <!-- TABEL SKU -->   
+        <section class="sku">
+    <h2 style="margin:20px;">Tabel SKU</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>SKU</th>
+                <th>Kuantitas</th>
+                <th>Harga</th>
+            </tr>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Wuque Jade Linear Switch</td>
+        <td>WUQUE Studio</td>
+        <td>350</td>
+        <td>Rp 6.950/Switch</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Game 1989 MX Stem 80Retros Switch</td>
+        <td>GAME1989</td>
+        <td>250</td>
+        <td>Rp 3.900/Switch</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Akko V3 Silver Pro Switch</td>
+        <td>AKKO</td>
+        <td>500</td>
+        <td>Rp 4.500/Switch</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>KTT MACARON SERIES PURPLE MECHANICAL SWITCHES</td>
+        <td>KTT</td>
+        <td>150</td>
+        <td>Rp 3.500/Switch</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Akko Fairy Switch - Mechanical Switch Keyboard</td>
+        <td>AKKO</td>
+        <td>750</td>
+        <td>Rp 5.500/Switch</td>
+      </tr>
+        </thead>
+        <tbody>
+    </table>
+            </body>
+    </section>
+
+    <section class="registration-form">
+        <!-- Registration Form component -->
+        <h2 style="margin:20px;">Form Registrasi Pelanggan</h2>
+        
+       
+
+<form id="registrationForm">
+  <label for="name">Nama:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="age">Umur:</label>
+  <input type="number" id="age" name="age" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="address">Alamat:</label>
+  <textarea id="address" name="address" required></textarea>
+
+  <button type="submit">Daftar</button>
+</form> 
+
+<h2 style="margin:20px;">Login</h2>
+<form id="loginForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Login</button>
+</form>
+  
+    </section>
+  
+<style>
+    footer {
+        background-color: #2D9596;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+</style> 
+    <footer>
+        &copy; 2024 Switch Store
+    </footer>
+
+</body>
+</html>
